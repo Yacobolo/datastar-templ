@@ -97,7 +97,7 @@ templ TodoApp() {
 
 ### Type-Safe Helpers
 
-V2 introduces type-safe helpers that eliminate runtime errors and provide clear API semantics:
+datastar-templ provides type-safe helpers that eliminate runtime errors and provide clear API semantics:
 
 **Signal Helpers** (for data transformation):
 ```go
@@ -156,7 +156,7 @@ See the [Go package documentation](https://pkg.go.dev/github.com/Yacobolo/datast
 
 ## Performance
 
-V2 is highly optimized using:
+The library is highly optimized using:
 - **sync.Pool** for builder reuse across requests
 - **Precise capacity allocation** to avoid buffer reallocation
 - **Direct string building** instead of JSON marshaling for primitives
